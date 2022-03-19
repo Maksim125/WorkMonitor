@@ -4,6 +4,7 @@ Inspired by the work from home era, this project helps you track how long you sp
 ## Version/Dependencies
 
 ```sh
+C++ (arduino)
 Python 3.8.11
 Pandas 1.3.1
 NodeRed
