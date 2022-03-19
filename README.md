@@ -13,7 +13,7 @@ Win10Toast
 ## Material Dependencies
 ```sh
 Arduino uno
-10k$\Omega$ resistor
+10k $\Omega$ resistor
 Photoresistor
 7 segment 4 digit display
 ```
