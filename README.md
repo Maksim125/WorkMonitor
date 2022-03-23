@@ -1,6 +1,6 @@
 # Work Monitor
 ---
-Inspired by the work from home era, this project helps you track how long you spend at your desk. (See a demo of it working [here](maxyarmak.tech/WorkMonitor))
+Inspired by the work from home era, this project helps you track how long you spend at your desk. (See a demo of it working [here](https://www.maxyarmak.tech/workmonitor))
 ## Version/Dependencies
 
 ```sh
