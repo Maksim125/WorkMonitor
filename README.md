@@ -20,10 +20,10 @@ Photoresistor
 
 ## Feature Summary
 - A simple voltage divider with a photoresistor to detect light sources
-- An ardunio uno running a script that counts how long the light has been on and displays the timer to a 7 segment 4 digit display
+- An Ardunio Uno running a script that counts how long the light has been on and displays the timer to a 7 segment 4 digit display
 - NodeRed to monitor the serial port that the arduino is connected to and activate the python script to record each session
     -  The script takes as its first argument the number of seconds to record, it will then use your system's date and time to log this session
--  After it has been logged, a toast is sent to your computer detailing your total time for today and the last several days
+-  After it has been logged, a toast (temporary pop-up notification) is sent to your computer detailing your total time for today and the last several days
 
 ## Installation Instructions
 1. Build the arduino circuit according to the specifications that can be found [here](maxyarmak.tech/workmonitor)
