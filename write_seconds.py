@@ -6,9 +6,17 @@ import os
 
 def main():
     seconds = sys.argv[1]
-    with open(os.getcwd() + "\productivity.csv", "a") as f:
-        f.write(f"{dt.datetime.now()},{seconds}\n")
-    show_toast()
+    if seconds.isnumeric(): #Argument is to write the number of seconds passed
+        with open(os.getcwd() + "\productivity.csv", "a") as f:
+            f.write(f"{dt.datetime.now()},{seconds}\n")
+        show_toast()
+    else: #Argument is to notify an hour passed
+        notify_hour()
+
+def notify_hour():
+    toaster = ToastNotifier()
+    message = "One hour has just passed!"
+    toaster.show_toast("Productivity", message, duration = 5, threaded = True, icon_path = os.getcwd()+"\desk.ico")
 
 def show_toast():
     toaster = ToastNotifier()

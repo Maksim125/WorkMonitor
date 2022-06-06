@@ -91,6 +91,11 @@ void loop() {
     unsigned long minutes = (ledCounter - (hours * 3600)) / 60;
     unsigned long seconds = (ledCounter - (hours * 3600) - (minutes * 60));
 
+    //Notify user an hour has passed every hour
+    if (minutes == 0 && seconds == 0 && hours >= 1) {
+      sendHourPassed();
+    }
+    
     //If no hours yet, display minutes and seconds
     if (hours == 0) {
       ledTimer[0] = (minutes /10) % 10;
@@ -136,6 +141,11 @@ void loop() {
 void sendLEDOnSeconds(int seconds) {
   Serial.println(seconds);
 }
+
+void sendHourPassed() {
+  Serial.println("hour");
+}
+
 
 /*
  * Turns on the digit at the specific index
